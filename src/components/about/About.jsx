@@ -1,41 +1,28 @@
 import React from "react";
 import "./about.css";
 
-import { FaAward } from "react-icons/fa";
-import { FiUsers } from "react-icons/fi";
-import { VscFolderLibrary } from "react-icons/vsc";
-
 const About = () => {
   return (
     <section id="about">
-      <h5>Get to Know</h5>
-      <h2>About Me</h2>
+      <h5 className="section__subtitle">Get to Know</h5>
+      <h2 className="section__title">About Me</h2>
 
       <div className="container about__container">
         <div className="about__me">
           <div className="about__me-image">
-            <img src="/b2.jpg" alt="About Image" />
+            <img src="/b2.jpg" alt="About Me" />
           </div>
         </div>
 
         <div className="about__content">
           <p className="about__description">
-            My name is birhanu, and I'm 23 years old. I've always been very
-            curious and passionate about technology. Since I was little, I've loved
-            keeping up with the latest innovations and trends in the field.
-            That's why I decided to pursue a career in technology, and I'm very
-            happy with my choice. Currently, I work as a Full Stack developer
-            using React and TypeScript. I always strive to update myself and
-            improve my skills in this area that I love so much. Besides work,
-            I also value my personal life greatly. I enjoy spending time with
-            friends and family, playing soccer, and listening to music. It's
-            important for me to maintain this balance as it keeps me motivated
-            and ready to face new challenges. I believe that my passion for
-            technology and dedication help me achieve my goals.
+            My name is Birhanu, and I'm 23 years old. I've always been curious and passionate about technology. Since I was young, I’ve loved keeping up with the latest innovations. That passion led me to pursue a career as a Full Stack Developer using React and TypeScript. I’m constantly seeking to improve and learn more in this ever-evolving field.
+            <br /><br />
+            Outside of work, I enjoy spending time with friends and family, playing soccer, and listening to music — keeping that balance helps me stay motivated and ready to tackle new challenges.
           </p>
 
           <a href="#contact" className="btn btn-primary">
-            Let's Talk
+            Let’s Talk
           </a>
         </div>
       </div>

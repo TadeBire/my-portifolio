@@ -1,57 +1,37 @@
 .portfolio__container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
 }
 
 .portfolio__item {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  background: var(--color-bg-variant);
-  padding: 1.3rem;
-  border-radius: 2rem;
-  border: 1px solid transparent;
-  transition: var(--transition);
-  color: black; /* 👈 Added text color */
+  background: #1f1f1f;
+  padding: 2rem;
+  border-radius: 1.2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .portfolio__item:hover {
-  border-color: var(--color-primary-variant);
-  background: transparent;
+  transform: translateY(-5px);
 }
 
-.portfolio__item-image {
-  border-radius: 1.5rem;
-  width: 200px;
-  height: 100px;
-  overflow: hidden;
+.portfolio__item h3 {
+  margin: 1rem 0;
+  color: lime;
 }
 
-.portfolio__item-cta {
-  display: flex;
-  flex-direction: column;
-  justify-content: initial;
-  align-items: center;
-  gap: 1rem;
+.portfolio__item-cta .btn {
+  margin-top: 0.5rem;
+  color: chartreuse;
+  transition: all 0.3s ease;
+  text-decoration: none;
 }
 
-/* Medium screens */
-@media screen and (max-width: 1024px) {
-  .portfolio__container {
-    grid-template-columns: 1fr 1fr;
-    gap: 1.2rem;
-  }
-}
-
-/* Small screens */
-@media screen and (max-width: 600px) {
-  .portfolio__container {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-}
-/* Make GitHub buttons black */
-.portfolio__item a.btn-primary {
-  color: black;
+.portfolio__item-cta .btn:hover,
+.portfolio__item-cta .btn:focus {
+  color: chartreuse; /* keep text color on hover */
+  text-decoration: underline; /* subtle hover effect */
+  background-color: transparent; /* no background change */
 }

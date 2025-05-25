@@ -7,17 +7,27 @@ import emailjs from "emailjs-com";
 
 const Contact = () => {
   const form = useRef();
+
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(
-      "service_e0o28lb",
-      "template_psen1th",
-      form.current,
-      "oPNsOXOqS8yOJLNKW"
-    );
-
-    e.target.reset();
+    emailjs
+      .sendForm(
+        "service_e0o28lb",
+        "template_psen1th",
+        form.current,
+        "oPNsOXOqS8yOJLNKW"
+      )
+      .then(
+        (result) => {
+          alert("Message sent successfully!");
+          e.target.reset();
+        },
+        (error) => {
+          alert("Failed to send message. Please try again.");
+          console.error(error.text);
+        }
+      );
   };
 
   return (
@@ -51,7 +61,7 @@ const Contact = () => {
 
           <article className="contact__option">
             <a
-              href="https://www.linkedin.com/in/joaofalcaodev/"
+              href="https://www.linkedin.com/in/jo/"
               target="_blank"
               rel="noreferrer"
               className="contact__option-icon-link"
@@ -60,7 +70,6 @@ const Contact = () => {
               <AiOutlineLinkedin className="contact__option-icon" />
             </a>
             <h4>LinkedIn</h4>
-            <h5>bir1213</h5>
             <a
               href="https://www.linkedin.com/in/joaofalcaodev/"
               target="_blank"
@@ -72,7 +81,7 @@ const Contact = () => {
 
           <article className="contact__option">
             <a
-              href="https://t.me/bir1213"
+              href="https://t.me/bir1221"
               target="_blank"
               rel="noreferrer"
               className="contact__option-icon-link"
@@ -80,10 +89,10 @@ const Contact = () => {
             >
               <FaTelegramPlane className="contact__option-icon" />
             </a>
-            <h4>Telegram</h4>
-            <h5>@bir1213</h5>
+             <h4>Telegram</h4>
             <a
-              href="https://t.me/bir1213"
+              href="https://t.me/bir1221"
+             
               target="_blank"
               rel="noreferrer"
             >

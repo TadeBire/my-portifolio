@@ -33,13 +33,13 @@ footer a {
 }
 
 .footer__socials a {
-  background: var(--color-bg);
+  background: #ff6347; /* changed only this */
   color: var(--color-white);
-  padding: 0.5rem;          /* reduced padding for smaller icon background */
-  border-radius: 0.5rem;   /* slightly smaller border radius */
+  padding: 0.5rem;          
+  border-radius: 0.5rem;   
   display: flex;
   border: 1px solid transparent;
-  font-size: 1.2rem;        /* adjust icon size */
+  font-size: 1.2rem;        
   align-items: center;
   justify-content: center;
 }

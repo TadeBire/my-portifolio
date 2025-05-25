@@ -1,31 +1,30 @@
 import React from "react";
 import "./portfolio.css";
-import IMG1 from "../../assets/a.jpg";
-import IMG2 from "../../assets/a.jpg";
-import IMG3 from "../../assets/a.jpg";
-
+import { FaCode, FaSchool, FaBullhorn } from "react-icons/fa"; // Updated marketing icon
 
 const data = [
   {
     id: 1,
-    image: IMG1,
-    title: "personal website",
-    github: "https://github.com/TadeBire/eventGoogleCalendarEAC",
+    icon: <FaCode size={40} />,
+    title: "Personal Website",
+    github: "https://github.com/TadeBire/my-portifolio.git",
+    color: "#6c63ff",
   },
   {
     id: 2,
-    image: IMG2,
-    title: "school managment",
-    github: "https://github.com/TadeBire/flappyBirdGame",
+    icon: <FaSchool size={40} />,
+    title: "School Management",
+    github: "https://github.com/TadeBire/schoolmanagment.git",
+    color: "#00b894",
   },
   {
     id: 3,
-    image: IMG3,
-    title: "Digital-Marketing",
-    github: "https://github.com/TadeBire/calculator",
+    icon: <FaBullhorn size={40} />, // Replaced with more relevant icon
+    title: "Digital Marketing",
+    github:
+      "https://github.com/21mebrat/smart-scalable-E-commerce-platform-for-Ethiopian-entrepreneurs-and-smse.git",
+    color: "#fdcb6e",
   },
- 
- 
 ];
 
 const Portfolio = () => {
@@ -35,27 +34,35 @@ const Portfolio = () => {
       <h2>Portfolio</h2>
 
       <div className="container portfolio__container">
-        {data.map(({ id, image, title, github }) => {
-          return (
-            <article key={id} className="portfolio__item">
-              <div className="portfolio__item-image">
-                <img src={image} alt={title} />
-              </div>
-
-              <div className="portfolio__item-cta">
-                <h3>{title}</h3>
-                <a
-                  href={github}
-                  className="btn btn-primary"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Github
-                </a>
-              </div>
-            </article>
-          );
-        })}
+        {data.map(({ id, icon, title, github, color }) => (
+          <article key={id} className="portfolio__item">
+            <div
+              className="portfolio__item-icon"
+              style={{
+                backgroundColor: color,
+                borderRadius: "1rem",
+                padding: "1.5rem",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                marginBottom: "1rem",
+              }}
+            >
+              {icon}
+            </div>
+            <h3>{title}</h3>
+            <div className="portfolio__item-cta">
+              <a
+                href={github}
+                className="btn btn-primary"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View on GitHub
+              </a>
+            </div>
+          </article>
+        ))}
       </div>
     </section>
   );
