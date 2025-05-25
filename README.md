@@ -1,62 +1,33 @@
-# Portfólio
-[![NPM](https://img.shields.io/npm/l/react)](https://github.com/jgabfalcao/react-portifolio/blob/main/LICENSE) 
+# 👋 Hi, I'm Tade Bire
 
-# Sobre o projeto
+Welcome to my GitHub profile!
 
-https://react-portifolio-orpin.vercel.app/
+I'm a passionate developer and tech enthusiast who loves building modern web applications, learning new technologies, and solving real-world problems.
 
-É uma aplicação Front-end Web e Mobile construída para armazenar meus principais projetos, meus conhecimentos e também as principais habilidades que possuo para agregar a empresas interessadas em meu serviço.
+---
 
-Possui um layout responsivo, display flex e grid, design moderno, envio de formulário para meu e-mail de contato.
+## 🚀 Projects
 
-## Layout Mobile Video 
+- 🔥 [My Portfolio Website](https://github.com/TadeBire/my-portifolio) – A showcase of my personal work and skills.
+- 📚 [Educational Projects](#) – Projects related to university and self-learning (coming soon).
+- 💡 [Open Source Contributions](#) – Contributions to community-driven projects (planned).
 
-<div align="center">
+---
 
-![Mobile 1](https://github.com/jgabfalcao/react-portifolio/blob/main/src/assets/mobile.gif) 
+## 💻 Tech Stack
 
-</div>
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 
-## Layout Web Video
+---
 
-<div align="center">
+---
 
-![Web 1](https://github.com/jgabfalcao/react-portifolio/blob/main/src/assets/desktop.gif)
+---
 
-</div>
-
-# Tecnologias utilizadas
-## Front end
-- ReactJS
-- HTML
-- CSS
-- JS 
-
-## Implantação em produção
-- Front end web: Vercel
-
-# Como executar o projeto
-
-## Front end web
-Pré-requisitos: npm
-
-```bash
-# clonar repositório
-git clone https://github.com/jgabfalcao/react-portifolio.git
-
-# entrar na pasta do projeto front end web
-cd react-portifolio
-
-# instalar dependências
-npm install
-
-# executar o projeto
-npm start
-```
-
-# Autor
-
-João Gabriel Falcão dos Santos
-
-https://www.linkedin.com/in/jo%C3%A3o-falc%C3%A3o013/
-
+⭐️ Thank you for visiting my profile!
