@@ -29,14 +29,8 @@ I'm a passionate developer and tech enthusiast who loves building modern web app
 ## 📫 Connect With Me
 
 - 🌐 Portfolio: [tadebire.netlify.app](https://tadebire.netlify.app) *(Replace with your actual portfolio link if deployed)*
-- 📧 Email: [tadebire@example.com](mailto:tadebire@example.com)
-- 💼 LinkedIn: [linkedin.com/in/tadebire](https://linkedin.com/in/tadebire) *(Replace with your real LinkedIn)*
 
 ---
-
-## 📊 GitHub Stats
-
-![Tade Bire's GitHub stats](https://github-readme-stats.vercel.app/api?username=TadeBire&show_icons=true&theme=tokyonight)
 
 ---
 
