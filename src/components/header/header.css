@@ -12,13 +12,24 @@
   }
 }
 
-/* Left section */
+/* Left section with transparent brightness gradient background */
 .header-left {
-  background-color: rgba(255, 255, 255, 0.669);
+  background: linear-gradient(
+    to right, 
+    rgba(0, 0, 0, 0.4),       /* darker on left */
+    rgba(255, 255, 255, 0.1)  /* brighter on right */
+  );
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 3rem 2.5rem;
+  border-radius: 1rem;
+  color: #c0fdfb; /* soft cyan text color for good contrast */
+  text-align: left;
+  max-width: 90%;
+  margin: 0px;
+  box-shadow: 0 10px 30px rgba(0, 255, 255, 0.15); /* subtle cyan glow */
+  flex-direction: column;
 }
 
 /* Title style */
@@ -95,6 +106,7 @@
   object-fit: cover;
   border-radius: 50%;
 }
+
 /* Wrapper for image + button */
 .header-profile-content {
   display: flex;
@@ -103,7 +115,7 @@
   z-index: 1;
 }
 
-/* Download button (already provided, just for completeness) */
+/* Download button */
 .download-cv-button {
   margin-bottom: 1.5rem;
   padding: 0.75rem 1.5rem;

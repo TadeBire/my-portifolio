@@ -16,7 +16,7 @@ const About = () => {
 
         <div className="about__content">
           <p className="about__description">
-            My name is Birhanu, and I'm 23 years old. I've always been curious and passionate about technology. Since I was young, I’ve loved keeping up with the latest innovations. That passion led me to pursue a career as a Full Stack Developer using React and TypeScript. I’m constantly seeking to improve and learn more in this ever-evolving field.
+            My name is Birhanu Tadele, id no"1305153,and I'm 23 years old. I've always been curious and passionate about technology. Since I was young, I’ve loved keeping up with the latest innovations. That passion led me to pursue a career as a Full Stack Developer using React and TypeScript. I’m constantly seeking to improve and learn more in this ever-evolving field.
             <br /><br />
             Outside of work, I enjoy spending time with friends and family, playing soccer, and listening to music — keeping that balance helps me stay motivated and ready to tackle new challenges.
           </p>

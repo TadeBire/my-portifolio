@@ -50,7 +50,7 @@
   outline-offset: 2px;
 }
 
-/* About container styles (unchanged as requested) */
+/* About container styles */
 .about__container {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -58,24 +58,82 @@
   align-items: center;
 }
 
-.about__me-image img {
-  width: 300px;          /* rectangular width */
-  height: 200px;         /* rectangular height */
-  border-radius: 15px;   /* subtle rounded corners */
-  object-fit: cover;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+/* Black background wrapper behind the image */
+.about__me {
+  background-color: black;  
+  padding: 10px;            
+  border-radius: 18px;      
+  display: inline-block;    
   margin: 0 auto;
 }
 
-/* Responsive tweak */
+.about__me-image img {
+  max-width: 200px;       
+  width: 100%;            
+  height: auto;           
+  border-radius: 15px;    
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  display: block;
+  margin: 0 auto;
+}
+
+/* NEW: Style for the text section */
+.about__content {
+  background-color: #121212; /* Dark background different from black */
+  padding: 2rem 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 255, 0, 0.2); /* subtle green glow */
+  color: #d0f0a6; /* soft light green text */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  transition: background-color 0.3s ease;
+}
+
+.about__content:hover {
+  background-color: #1f3a1f; /* Slightly lighter green on hover */
+}
+
+/* Paragraph styling */
+.about__description {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Button styling inside about content */
+.about__content .btn {
+  background-color: chartreuse;
+  color: black;
+  font-weight: 700;
+  padding: 0.7rem 1.6rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: inline-block;
+  font-size: 1rem;
+}
+
+.about__content .btn:hover,
+.about__content .btn:focus {
+  background-color: #b3ff66;
+  color: #1a1a1a;
+  outline: none;
+}
+
+/* Responsive tweaks */
 @media screen and (max-width: 768px) {
   .about__container {
     grid-template-columns: 1fr;
     text-align: center;
   }
 
+  .about__me {
+    padding: 8px;
+  }
+
   .about__me-image img {
-    width: 240px;
-    height: 160px; /* adjusted height to keep rectangular ratio */
+    max-width: 300px;
   }
 }

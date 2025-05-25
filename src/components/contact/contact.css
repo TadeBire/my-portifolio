@@ -75,3 +75,18 @@ textarea:focus {
     width: var(--container-width-sm);
   }
 }
+.btn.btn-primary {
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn.btn-primary:hover {
+  background-color: var(--color-primary-variant); /* Lighter or different shade */
+  color: black; /* Optional: change text color on hover */
+  cursor: pointer;
+}
