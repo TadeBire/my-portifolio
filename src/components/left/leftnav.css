@@ -1,0 +1,43 @@
+.left__nav {
+  position: fixed;
+  top: 30%;
+  left: 0;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 1rem;
+  border-radius: 0 10px 10px 0;
+  max-height: 40vh;
+  overflow-y: auto;
+}
+
+.left__nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.left__nav li {
+  margin: 0.8rem 0;
+}
+
+.left__nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.left__nav a:hover {
+  color: var(--color-primary);
+  padding-left: 0.4rem;
+}
+
+/* Optional scrollbar style */
+.left__nav::-webkit-scrollbar {
+  width: 4px;
+}
+.left__nav::-webkit-scrollbar-thumb {
+  background-color: var(--color-primary);
+  border-radius: 6px;
+}

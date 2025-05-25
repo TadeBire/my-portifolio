@@ -1,0 +1,120 @@
+/* Container grid: 1 column on small, 2 columns on wider screens */
+.header-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  min-height: 100vh;
+}
+
+/* Responsive: 2 columns from 768px up */
+@media screen and (min-width: 768px) {
+  .header-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Left section */
+.header-left {
+  background-color: rgba(255, 255, 255, 0.669);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* Title style */
+.header-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #14b8a6; /* teal-600 */
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+/* Highlight span */
+.highlight {
+  color: #111827; /* gray-900 */
+}
+
+/* Description text */
+.header-description {
+  font-size: 1.125rem;
+  color: #4b5563; /* gray-700 */
+  line-height: 1.6;
+}
+
+/* Right section */
+.header-right {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* No background color here to avoid rectangle */
+  padding: 2rem;
+}
+
+/* Circular radial gradient behind the profile image */
+.header-gradient {
+  position: absolute;
+  width: 480px;     /* increased from 360px */
+  height: 480px;    /* increased from 360px */
+  border-radius: 50%;
+  background: radial-gradient(circle at center, 
+    #ff6b6b 0%, 
+    #f06595 20%, 
+    #cc5de8 40%, 
+    #845ef7 60%, 
+    #5c7cfa 80%, 
+    transparent 100%);
+  filter: blur(80px);  /* increased blur for softer edges */
+  opacity: 0.8;
+  z-index: 0;
+}
+
+/* Profile image wrapper */
+.header-profile-wrapper {
+  width: 288px;
+  height: 288px;
+  border-radius: 50%;
+  border: 8px solid white;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+  transition: transform 0.5s ease;
+  position: relative;
+  z-index: 1;
+  background-color: transparent; /* no background rectangle */
+}
+
+/* Hover scale */
+.header-profile-wrapper:hover {
+  transform: scale(1.05);
+}
+
+/* Profile image */
+.header-profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+/* Wrapper for image + button */
+.header-profile-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+
+/* Download button (already provided, just for completeness) */
+.download-cv-button {
+  margin-bottom: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #14b8a6; /* teal-600 */
+  color: white;
+  border-radius: 9999px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.download-cv-button:hover {
+  background-color: #0d9488; /* teal-700 */
+}
