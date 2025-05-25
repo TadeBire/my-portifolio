@@ -26,10 +26,6 @@ I'm a passionate developer and tech enthusiast who loves building modern web app
 
 ---
 
-## 📫 Connect With Me
-
-- 🌐 Portfolio: [tadebire.netlify.app](https://tadebire.netlify.app) *(Replace with your actual portfolio link if deployed)*
-
 ---
 
 ---
